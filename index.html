@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustler Fund</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/Javascript" src="web.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Hustler fund survey</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <div class="container">
+        <form method="post" action="https://register-demo.freecodecamp.org" id="survey-form">
+            <div>
+                <div>
+                    <div class="form-group">
+                        <label id="name-label" for="first-name">Name</label>
+                        <input id="name"type="text" placeholder="First name" required name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label id="last-name-label" for="last-name" name="last-name">Last name</label>
+                        <input type="text" placeholder="Last name" required id="last-name" name="last-name">
+                    </div> 
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" required placeholder="Email" name="email" id="email">
+                    </div> 
+                    <div class="form-group">
+                        <label id="number-label" for="age">Age</label>
+                        <input type="number" max="100" min="18" placeholder="Age" name="number" id="number" required>
+                    </div>
+                </div>first-
+                <div class="fieldset">
+                    <div class="form-group">
+                        <label for="referrer">How did you hear about us?
+                            <select id="referrer" name="referrer">
+                                <option value="">(select one)</option>
+                                <option value="1">News paper</option>
+                                <option value="2">Television</option>
+                                <option value="3">Radio</option>
+                                <option value="4">Friend</option>
+                                <option value="5">Other</option>
+                            </select>
+                        </label>
+                    </div> 
+                    <div class="form-group">
+                        <label id="option-1-label" >Was the fund helpful?</label>
+                        <label for="Yes"><Input type="radio" name="option-1" id="yes" class="inline" value="yes" required>Yes</label>
+                        <label for="no"><Input type="radio" name="option-1" id="No" class="inline" value="no" required>No</label>
+                        
+                    </div> 
+                    <div class="form-group">
+                        <label >Would you recommend Hulstler fund to people?</label>
+                        <label for="Definatly"><Input type="radio" name="option-1" id="Definatly" class="inline" value="Definatly" required>Definatly</label>
+                        <label for="May-be"><Input type="radio" name="option-1" id="May-be" class="inline" value="May-be" required>May be</label>
+                        <label for="Not-sure"><Input type="radio" name="option-1" id="Not-sure" class="inline" value="Not-sure" required>Not sure</label> 
+                    </div>
+                    <div class="form-group">
+                        <label>What service would you liked to be improved?</label>
+                        <label><input type="checkbox" class="inline" value="Increase loan limit">Increase loan limit</label>
+                        <label><input type="checkbox" class="inline" value="Low intrest rate">Low intrest rate</label>
+                        <label><input type="checkbox" class="inline" value="Increase Loan repayment time">Increase Loan repayment time</label>
+                        
+
+                    </div>
+                </div>
+                <div class="fieldset">
+                    <div class="form-group">
+                        <label for="comments">Any comments or suggestions?(optional)
+                        </label>
+                        <textarea id="comments" placeholder="Enter your comments here..." cols="30" rows="3" name="comments"></textarea>
+                </div>
+            </div>
+            <input id="submit" type="submit" value="Submit">    
+        </form>
+    </div>
+</body>
+</html>
